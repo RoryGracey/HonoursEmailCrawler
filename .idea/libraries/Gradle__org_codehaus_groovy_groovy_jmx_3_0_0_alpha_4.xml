@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.codehaus.groovy:groovy-jmx:3.0.0-alpha-4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-jmx/3.0.0-alpha-4/28959e85fdcaa5042c8aa2b8f8822cb76286bb00/groovy-jmx-3.0.0-alpha-4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-jmx/3.0.0-alpha-4/2a134b339380e338a22faf33917b2338d23c4fb4/groovy-jmx-3.0.0-alpha-4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
