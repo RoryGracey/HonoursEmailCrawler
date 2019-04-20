@@ -1,27 +1,23 @@
-import java.io.DataOutput;
-import java.io.DataOutputStream;
-import java.net.*;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.DataOutputStream;
+import java.net.Socket;
 
-public class EmailClientOneGUI{
-    private JPanel panel1;
+public class EmailClientTwoGUI {
     private JTextArea textArea1;
     private JTextArea textArea2;
     private JButton sendEmailButton;
+    private JPanel jp1;
     private Socket s;
-
-
     public static void main(String[] args){
         JFrame frame = new JFrame("App");
-        frame.setContentPane(new EmailClientOneGUI().panel1);
+        frame.setContentPane(new EmailClientTwoGUI().jp1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
     }
-
-    public EmailClientOneGUI() {
+    public EmailClientTwoGUI() {
         sendEmailButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -41,7 +37,5 @@ public class EmailClientOneGUI{
                 }
             }
         });
-
     }
-
 }
