@@ -33,6 +33,7 @@ public class EmailClientOneGUI{
                     s = new Socket("127.0.0.1", 3000);
                     System.out.println("Connected To Server");
                     DataOutputStream dOut = new DataOutputStream(s.getOutputStream());
+                    dOut.writeUTF("UserOne");
                     dOut.writeUTF("Subject: " + textOne);
                     dOut.writeUTF("Body: " + textTwo);
                     dOut.flush();

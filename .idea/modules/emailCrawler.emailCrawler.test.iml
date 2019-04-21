@@ -53,6 +53,7 @@
     <orderEntry type="library" name="Gradle: org.apiguardian:apiguardian-api:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.beust:jcommander:1.72" level="project" />
     <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.1.1" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.15" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="emailCrawler.emailCrawler.main" />
 </module>
