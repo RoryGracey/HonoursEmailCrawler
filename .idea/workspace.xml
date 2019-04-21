@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf328489-dba5-458a-b0ae-aba475d77aca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Server.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ServerRun.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmailClientOneGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailClientOneGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/EmailClientOneGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/EmailClientOneGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/EmailClientOneGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/EmailClientOneGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/EmailClientTwoGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/EmailClientTwoGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/EmailClientTwoGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/EmailClientTwoGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/InboxClientOneGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/InboxClientOneGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/serverGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/serverGUI.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EmailClientOneGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailClientOneGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InboxClientOneGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InboxClientOneGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InboxClientOneGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InboxClientOneGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serverGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serverGUI.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -27,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientOneGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+            <state relative-caret-position="595">
+              <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/InboxClientOneGUI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="115" selection-start-line="18" selection-start-column="115" selection-end-line="18" selection-end-column="115" />
+              <caret line="18" column="118" selection-start-line="18" selection-start-column="118" selection-end-line="18" selection-end-column="118" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,13 +64,25 @@
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/serverGUI.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ServerRun.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Server.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+              <folding>
+                <element signature="e#1#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="765">
+              <caret line="45" column="109" lean-forward="true" selection-start-line="45" selection-start-column="109" selection-end-line="45" selection-end-column="109" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,7 +106,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/serverGUI.form">
+        <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
@@ -106,13 +129,17 @@
         <option value="$PROJECT_DIR$/src/main/java/TestJavaFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/EmailClientOne.java" />
         <option value="$PROJECT_DIR$/src/main/java/serverGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/serverGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/EmailClientOneGUI.form" />
         <option value="$PROJECT_DIR$/src/main/java/InboxClientOneGUI.form" />
+        <option value="$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.form" />
+        <option value="$PROJECT_DIR$/src/main/java/runServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/serverGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testRun.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/ServerRun.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/EmailClientOneGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/InboxClientOneGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Server.groovy" />
       </list>
     </option>
   </component>
@@ -153,13 +180,6 @@
               <item name="emailCrawler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emailCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emailCrawler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -186,18 +206,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="InboxClientOneGUI" type="e9f4de52:FormNode" />
             </path>
-            <path>
-              <item name="emailCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emailCrawler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serverGUI" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="emailCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -205,7 +213,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555846828219" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555889164233" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysql-connector-java-8.0.15.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -228,9 +236,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EmailClientOneGUI">
+  <component name="RunManager" selected="Application.EmailClientTwoGUI">
     <configuration name="EmailClientOneGUI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EmailClientOneGUI" />
+      <module name="emailCrawler.emailCrawler.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailClientTwoGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EmailClientTwoGUI" />
       <module name="emailCrawler.emailCrawler.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -250,17 +265,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProducerConsumer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="emailCrawler.emailCrawler.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sanityCheck.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sanityCheck" />
-      <option name="MAIN_CLASS_NAME" value="sanityCheck.TestProducerConsumer" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="ServerRun" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="emailCrawler.emailCrawler.main" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/main/java/ServerRun.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/java" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testRun" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="emailCrawler.emailCrawler.main" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/main/java/testRun.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/java" />
+      <setting name="debug" value="false" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -269,13 +291,17 @@
       <item itemvalue="Application.EmailClientOneGUI" />
       <item itemvalue="Application.serverGUI" />
       <item itemvalue="Application.InboxClientOneGUI" />
-      <item itemvalue="JUnit.TestProducerConsumer" />
+      <item itemvalue="Application.EmailClientTwoGUI" />
+      <item itemvalue="Groovy.testRun" />
+      <item itemvalue="Groovy.ServerRun" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmailClientTwoGUI" />
+        <item itemvalue="Groovy.ServerRun" />
+        <item itemvalue="Groovy.testRun" />
         <item itemvalue="Application.InboxClientOneGUI" />
         <item itemvalue="Application.serverGUI" />
-        <item itemvalue="JUnit.TestProducerConsumer" />
       </list>
     </recent_temporary>
   </component>
@@ -360,32 +386,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientOne.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/TestJavaFile.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.form">
+    <entry file="file://$PROJECT_DIR$/src/main/java/InboxClientOneGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/serverGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientOneGUI.form">
+    <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/InboxClientOneGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientOneGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/runServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/serverGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testRun.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientOneGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServerRun.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="765">
+          <caret line="45" column="109" lean-forward="true" selection-start-line="45" selection-start-column="109" selection-end-line="45" selection-end-column="109" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/EmailClientOneGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -395,19 +458,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/InboxClientOneGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="115" selection-start-line="18" selection-start-column="115" selection-end-line="18" selection-end-column="115" />
+          <caret line="18" column="118" selection-start-line="18" selection-start-column="118" selection-end-line="18" selection-end-column="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/serverGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Server.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
+        <state relative-caret-position="434">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

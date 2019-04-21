@@ -16,9 +16,9 @@ public class InboxClientOneGUI {
             frame.setVisible(false);
 
             // SQL Connection
-            Connection con = DriverManager.getConnection("jdbc:mysql://192.168.0.33:3306/emailInbox","root","######");
+            Connection con = DriverManager.getConnection("jdbc:mysql://192.168.0.33:3306/emailInbox","root","#########");
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("SELECT emailID, subject, body FROM emails WHERE user='UserOne';");
+            ResultSet rs = st.executeQuery("SELECT subject, body FROM emails WHERE user='UserOne';");
             JTable table = new JTable(buildTableModel(rs));
             JOptionPane.showMessageDialog(null, new JScrollPane(table));
         }catch (Exception e){
