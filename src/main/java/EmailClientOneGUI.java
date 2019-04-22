@@ -44,7 +44,7 @@ public class EmailClientOneGUI{
             }
         });
         // Drop down auto-fill
-        Connection con = DriverManager.getConnection("jdbc:mysql://192.168.0.33:3306/emailInbox","root","##########");
+        Connection con = DriverManager.getConnection("jdbc:mysql://192.168.0.33:3306/emailInbox","root","###########");
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery("SELECT UserName FROM users WHERE UserName != 'UserOne';");
         s = new Socket("127.0.0.1", 3000);
