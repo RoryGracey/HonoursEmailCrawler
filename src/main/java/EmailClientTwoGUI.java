@@ -4,7 +4,6 @@ import java.awt.event.ActionListener;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-import java.sql.*;
 
 public class EmailClientTwoGUI{
     private JTextArea textArea1;
@@ -13,7 +12,7 @@ public class EmailClientTwoGUI{
     private JPanel jp1;
     private JComboBox comboBox1;
     private Socket s;
-    public static void main(String[] args) throws SQLException, IOException {
+    public static void main(String[] args) throws IOException {
         // Create GUI
         JFrame frame = new JFrame("App");
         frame.setContentPane(new EmailClientTwoGUI().jp1);
@@ -21,7 +20,7 @@ public class EmailClientTwoGUI{
         frame.pack();
         frame.setVisible(true);
     }
-    public EmailClientTwoGUI() throws SQLException, IOException {
+    public EmailClientTwoGUI() throws IOException {
         sendEmailButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -41,14 +40,13 @@ public class EmailClientTwoGUI{
             }
         });
         // Drop down auto-fill
+        String[] rs = {"User One"};
         s = new Socket("127.0.0.1", 3000);
         System.out.println("Connected To Server");
-        Connection con = DriverManager.getConnection("jdbc:mysql://192.168.0.33:3306/emailInbox","root","#########");
-        Statement st = con.createStatement();
-        ResultSet rs = st.executeQuery("SELECT UserName FROM users WHERE UserName != 'UserTwo';");
-        while (rs.next()){
-            System.out.println(rs.getString(1));
-            comboBox1.addItem(rs.getString(1));
+
+        for(int i = 0; i < rs.length; i++){
+            System.out.println(rs[i]);
+            comboBox1.addItem(rs[i]);
         }
     }
 }

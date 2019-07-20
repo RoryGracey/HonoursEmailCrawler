@@ -6,7 +6,6 @@
     <content url="file://$MODULE_DIR$/../../src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../src/main/groovy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -52,6 +51,5 @@
     <orderEntry type="library" name="Gradle: org.apiguardian:apiguardian-api:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.beust:jcommander:1.72" level="project" />
     <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.1.1" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-8.0.15" level="project" />
   </component>
 </module>
