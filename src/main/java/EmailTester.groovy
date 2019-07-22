@@ -7,7 +7,7 @@ class EmailTester implements CSProcess{
     void run(){
         String user = "User One"
         String subject = "Subject from user One"
-        String body = "body from user one"
+        String body = "body from user one: https://www.twitch.tv/johnreeebus"
         OutputUser.write(user)
         OutputSubject.write(subject)
         OutputBody.write(body)
