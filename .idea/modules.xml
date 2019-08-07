@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emailCrawler.emailCrawler.iml" filepath="$PROJECT_DIR$/.idea/modules/emailCrawler.emailCrawler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emailCrawler.emailCrawler.main.iml" filepath="$PROJECT_DIR$/.idea/modules/emailCrawler.emailCrawler.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emailCrawler.emailCrawler.test.iml" filepath="$PROJECT_DIR$/.idea/modules/emailCrawler.emailCrawler.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emailCrawler.iml" filepath="$PROJECT_DIR$/.idea/modules/emailCrawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emailCrawler.main.iml" filepath="$PROJECT_DIR$/.idea/modules/emailCrawler.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emailCrawler.test.iml" filepath="$PROJECT_DIR$/.idea/modules/emailCrawler.test.iml" />
     </modules>
   </component>
 </project>

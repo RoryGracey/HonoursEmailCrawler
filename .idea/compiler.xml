@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="emailCrawler.emailCrawler.main" target="1.8" />
       <module name="emailCrawler.emailCrawler.test" target="1.8" />
+      <module name="emailCrawler.main" target="1.8" />
+      <module name="emailCrawler.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
