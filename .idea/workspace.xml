@@ -2,29 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf328489-dba5-458a-b0ae-aba475d77aca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AgentManager.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProcessNode.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/runAgents.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/emailCrawler.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/emailCrawler.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/emailCrawler.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/emailCrawler.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/TestGroovy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/TestGroovy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/hellogroovygui/views.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/hellogroovygui/views.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EmailClientTwoGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EmailClientTwoGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EmailClientTwoGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EmailClientTwoGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/InboxClientOneGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/InboxClientOneGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agent.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agent.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmailTester.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailTester.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AgentManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgentManager.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProcessNode.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProcessNode.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/runAgents.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runAgents.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +50,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

@@ -30,5 +30,4 @@ class ProcessNode implements CSProcess{
             localValue = localValue + 10
         }
     }
-
 }

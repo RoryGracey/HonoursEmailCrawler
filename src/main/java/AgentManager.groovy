@@ -18,18 +18,14 @@ class AgentManager implements CSProcess{
 
         def theAgent = new Agent( result: [initialValue])
 
-        for ( i in 1 .. iterations) {
-            outChannel.write(theAgent)
-            theAgent = inChannel.read()
-            theAgent.connect ( [fromAgentOutEnd, toAgentInEnd ] )
-            def agentManager = new ProcessManager (theAgent)
-            agentManager.start()
-            def returnedResults = fromAgentInEnd.read()
-            println "Root: Iteration: $i is $returnedResults and initial value of $initialValue  "
-            returnedResults << "end of " + i
-            toAgentOutEnd.write (returnedResults)
-            agentManager.join()
-            theAgent.disconnect()
-        }
+        outChannel.write(theAgent)
+        theAgent = inChannel.read()
+        theAgent.connect ( [fromAgentOutEnd, toAgentInEnd ] )
+        def agentManager = new ProcessManager (theAgent)
+        agentManager.start()
+        def returnedResults = fromAgentInEnd.read()
+        toAgentOutEnd.write (returnedResults)
+        agentManager.join()
+        theAgent.disconnect()
     }
 }
