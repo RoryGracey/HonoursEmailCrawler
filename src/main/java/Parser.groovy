@@ -8,8 +8,10 @@ class Parser implements CSProcess{
     ChannelInput subjectIn
     ChannelInput bodyIn
     ChannelOutput channelOutput
-    ChannelOutput parserToAgent
+    ChannelOutput parserToAgentManager
+    ChannelInput parserFromAgent
     void run(){
+        def outputFromAgent = []
         def receivedUser = userIn.read()
         def receivedInput = subjectIn.read()
         def receivedBody = bodyIn.read()
@@ -19,5 +21,10 @@ class Parser implements CSProcess{
         def result = (receivedBody =~/[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)/)[0]
         def parsedLink = result[0]
         channelOutput.write(parsedLink)
+        parserToAgentManager.write("ready")
+        while(true){
+            outputFromAgent << parserFromAgent.read()
+            println("OUTPUT: " + outputFromAgent)
+        }
     }
 }

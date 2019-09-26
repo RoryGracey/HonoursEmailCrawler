@@ -9,7 +9,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agent.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agent.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AgentManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgentManager.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProcessNode.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProcessNode.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/runAgents.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runAgents.groovy" afterDir="false" />
     </list>
@@ -23,6 +25,43 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="emailCrawler" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="emailCrawler" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="emailCrawler" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="emailCrawler" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,16 +119,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGUI" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
-      <module name="emailCrawler.emailCrawler.main" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/main/java/TestGUI.groovy" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/java" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Project [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="TestRun" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="emailCrawler.emailCrawler.main" />
@@ -137,19 +184,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.EmailClientOneGUI" />
-      <item itemvalue="Groovy.TestGUI" />
       <item itemvalue="Groovy.TestRun" />
       <item itemvalue="Groovy.runtest" />
       <item itemvalue="Groovy.runtest (1)" />
       <item itemvalue="Groovy.runAgents" />
+      <item itemvalue="Gradle.Project [build]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Groovy.runAgents" />
+        <item itemvalue="Gradle.Project [build]" />
         <item itemvalue="Groovy.runtest" />
         <item itemvalue="Groovy.runtest (1)" />
         <item itemvalue="Groovy.TestRun" />
-        <item itemvalue="Groovy.TestGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -170,15 +217,6 @@
     <history-entry file="TestProducerConsumer - 2019.04.11 at 14h 47m 41s.xml">
       <configuration name="TestProducerConsumer" configurationId="JUnit" />
     </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
