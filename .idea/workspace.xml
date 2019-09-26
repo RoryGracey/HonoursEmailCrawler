@@ -10,8 +10,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Agent.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agent.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AgentManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgentManager.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Parser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProcessNode.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProcessNode.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

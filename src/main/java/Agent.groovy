@@ -16,8 +16,7 @@ class Agent implements MobileAgent{
         fromLocal = null
     }
     void run(){
-        println("Agent Started")
-        toLocal.write("Hello This is coming from an agent")
+        toLocal.write("Hello This is coming from agent")
         result = fromLocal.read()
     }
 

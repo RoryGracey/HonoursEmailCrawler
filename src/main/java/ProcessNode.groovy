@@ -25,7 +25,7 @@ class ProcessNode implements CSProcess{
             def agentManager = new ProcessManager(theAgent)
             agentManager.start()
             def resultFromAgent = fromAgentInEnd.read()
-            toParser.write(resultFromAgent)
+            toParser.write(resultFromAgent + " " + nodeId)
             toAgentOutEnd.write(resultFromAgent)
             agentManager.join()
             theAgent.disconnect()
