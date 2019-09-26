@@ -30,7 +30,6 @@ class ProcessNode implements CSProcess{
             agentManager.join()
             theAgent.disconnect()
             outChannel.write(theAgent)
-            println("ended loop.")
         }
     }
 }

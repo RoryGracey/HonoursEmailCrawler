@@ -19,7 +19,6 @@ class Agent implements MobileAgent{
         println("Agent Started")
         toLocal.write("Hello This is coming from an agent")
         result = fromLocal.read()
-        println("GOT RESULT ENDING")
     }
 
 }

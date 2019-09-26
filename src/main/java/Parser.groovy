@@ -22,9 +22,11 @@ class Parser implements CSProcess{
         def parsedLink = result[0]
         channelOutput.write(parsedLink)
         parserToAgentManager.write("ready")
-        while(true){
+        def i = 0
+        while(i ..< 4){
+            i = i + 1
             outputFromAgent << parserFromAgent.read()
-            println("OUTPUT: " + outputFromAgent)
         }
+        println("OUTPUT: " + outputFromAgent)
     }
 }

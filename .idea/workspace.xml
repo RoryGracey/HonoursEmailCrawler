@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/AgentManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgentManager.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Parser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProcessNode.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProcessNode.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/runAgents.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runAgents.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

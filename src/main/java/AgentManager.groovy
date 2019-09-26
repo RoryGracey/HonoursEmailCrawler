@@ -32,7 +32,6 @@ class AgentManager implements CSProcess{
         agentManager.start()
         returnedResults = fromAgentInEnd.read()
         toAgentOutEnd.write(returnedResults)
-        //toParser.write(returnedResults)
         agentManager.join()
         theAgent.disconnect()
     }
