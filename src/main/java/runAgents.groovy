@@ -15,20 +15,22 @@ def serverBodyToParser = Channel.one2one()
 def resultToServer = Channel.one2one()
 def agent2Parser = Channel.one2one()
 def parser2AgentManager = Channel.one2any()
-
+def server2reciver = Channel.one2one()
 
 def emailClient = new EmailTester(OutputUser: outputUser.out(), OutputSubject: outputSubject.out(), OutputBody: outputBody.out())
-def server = new Server(userIn: outputUser.in(), subjectIn: outputSubject.in(), bodyIn: outputBody.in(), userOut: serverUserToParser.out(), subjectOut: serverSubjectToParser.out(), bodyOut: serverBodyToParser.out(), result: resultToServer.in())
+def server = new Server(userIn: outputUser.in(), subjectIn: outputSubject.in(), bodyIn: outputBody.in(), userOut: serverUserToParser.out(), subjectOut: serverSubjectToParser.out(), bodyOut: serverBodyToParser.out(), result: resultToServer.in(), toReciever: server2reciver.out())
 def parser = new Parser(userIn: serverUserToParser.in(), subjectIn: serverSubjectToParser.in(), bodyIn: serverBodyToParser.in(), channelOutput: resultToServer.out(), parserFromAgent: agent2Parser.in(), parserToAgentManager: parser2AgentManager.out())
 def processNodes = (1 ..< nodes).collect { i -> new ProcessNode(inChannel: ring[i].in(), outChannel: ring[i+1].out(), toParser: agent2Parser.out(), nodeId: i) }
+def emailReciever = new EmailReciever(channelInput: server2reciver.in())
 
 processNodes << new ProcessNode ( inChannel: ring[nodes].in(), outChannel: ring[0].out(), toParser: agent2Parser.out(), nodeId: nodes)
+
 println(processNodes)
 def rootNode = new AgentManager ( inChannel: ring[0].in(),
         outChannel: ring[1].out(), fromParserToAM: parser2AgentManager.in(),
         initialValue: initialValue)
 
 
-def network = processNodes << rootNode << emailClient << server << parser
+def network = processNodes << rootNode << emailClient << server << parser << emailReciever
 
 new PAR ( network ).run()
