@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf328489-dba5-458a-b0ae-aba475d77aca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/EmailReciever.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NetworkManager.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
@@ -10,7 +11,17 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EmailClientTwoGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EmailClientTwoGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/InboxClientOneGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agent.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agent.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AgentManager.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailClientTwoGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InboxClientOneGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InboxClientOneGUI.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Parser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProcessNode.groovy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Server.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/runAgents.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runAgents.groovy" afterDir="false" />
     </list>
@@ -183,11 +194,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.EmailClientOneGUI" />
+      <item itemvalue="Gradle.Project [build]" />
       <item itemvalue="Groovy.TestRun" />
       <item itemvalue="Groovy.runtest" />
       <item itemvalue="Groovy.runtest (1)" />
       <item itemvalue="Groovy.runAgents" />
-      <item itemvalue="Gradle.Project [build]" />
     </list>
     <recent_temporary>
       <list>

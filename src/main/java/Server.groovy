@@ -18,8 +18,7 @@ class Server implements CSProcess{
         subjectOut.write(subject)
         bodyOut.write(body)
         def resultFromParser = result.read()
-        def outputFromAgent  = result.read()
         toReciever.write(user + ": " + subject + ": "+ body + ": " + resultFromParser)
-        //println(resultFromParser)
+        println(resultFromParser)
     }
 }
