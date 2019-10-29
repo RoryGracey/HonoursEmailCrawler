@@ -23,12 +23,7 @@ def QNM = new QuarantineNetworkManager(fromNetworkManager: Network2QNetwork.in()
 def emailReceiver = new EmailReciever(channelInput: server2receiver.in())
 
 
-def network = []
-network.add(emailClient)
-network.add(server)
-network.add(parser)
-network.add(NM)
-network.add(QNM)
-network.add(emailReceiver)
+def network = [emailClient, server, parser, NM, QNM, emailReceiver]
+
 
 new PAR ( network ).run()
