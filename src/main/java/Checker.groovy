@@ -7,10 +7,11 @@ import java.net.InetAddress
 class Checker implements CSProcess{
     ChannelOutput channelOutput
     ChannelInput channelInput
+    ChannelOutput toQNM
     def nodeID
     def result
     void run(){
-
+        channelOutput.write('Hello from ' + nodeID)
         //try {
             //def domainToCheck = 'google.co.uk'
             //def domainInetAddress = InetAddress.getByName(domainToCheck);

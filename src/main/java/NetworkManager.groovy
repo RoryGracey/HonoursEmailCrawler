@@ -9,6 +9,7 @@ class NetworkManager implements CSProcess{
     ChannelInput fromQuarantine
     void run(){
         def link = fromParser.read()
+        println(link)
         toQuarantine.write(link)
         def qResponse = fromQuarantine.read()
         if(qResponse == 'OK'){

@@ -17,8 +17,8 @@ class Parser implements CSProcess{
         def receivedBody = bodyIn.read()
         def result = (receivedBody =~/[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)/)[0]
         def parsedLink = result[0]
+        println(parsedLink)
         toNetworkManager.write(parsedLink)
         def response = fromNetworkManager.read()
-        channelOutput.write(response)
     }
 }
