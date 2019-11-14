@@ -14,6 +14,7 @@ class Checker implements CSProcess{
             channelOutput.write('Ready')
             def job = channelInput.read()
             println(nodeID + ' did this job: ' + job)
+            channelOutput.write('Bad or Good')
         }
         //try {
             //def domainToCheck = 'google.co.uk'

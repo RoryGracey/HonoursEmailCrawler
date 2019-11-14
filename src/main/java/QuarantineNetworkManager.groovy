@@ -12,7 +12,6 @@ class QuarantineNetworkManager implements CSProcess {
         def avCheckers = []
         def alt = new ALT (fromChecker)
         while(true){
-            println(avCheckers)
             def index = alt.fairSelect()
             switch (index) {
                 case 0:
@@ -23,7 +22,6 @@ class QuarantineNetworkManager implements CSProcess {
                             toNetworkManager.write(takingJob)
                             def job = fromNetworkManager.read()
                             toChecker[takingJob].write(job)
-                            println('sent to checker')
                         }else{
 
                         }
@@ -35,14 +33,17 @@ class QuarantineNetworkManager implements CSProcess {
                     if (result == 'Ready') {
                         avCheckers << 1
                         break
+                    }else if(result != 'Ready'){
+                        println('Result: ' + result)
                     }
                     break
                 case 2:
                     def result = fromChecker[2].read()
-                    println(result)
                     if(result == 'Ready'){
                         avCheckers << 2
                         break
+                    }else if(result != 'Ready'){
+                        println('Result: ' + result)
                     }
                     break
                 case 3:
@@ -50,6 +51,8 @@ class QuarantineNetworkManager implements CSProcess {
                     if (result == 'Ready'){
                         avCheckers << 3
                         break
+                    }else if(result != 'Ready'){
+                        println('Result: ' + result)
                     }
                     break
                 case 4:
@@ -57,8 +60,8 @@ class QuarantineNetworkManager implements CSProcess {
                     if (result == 'Ready'){
                         avCheckers << 4
                         break
-                    }else{
-                        println(result)
+                    }else if(result != 'Ready'){
+                        println('Result: ' + result)
                     }
                     break
             }

@@ -6,7 +6,7 @@ class EmailTester implements CSProcess{
     ChannelOutput OutputSubject
     void run(){
         def i = 0
-        while(i < 10) {
+        while(i < 100) {
             String user = "User One"
             String subject = "Subject from user One"
             String body = "body from user one: https://www.google.com/"
@@ -14,7 +14,7 @@ class EmailTester implements CSProcess{
             OutputSubject.write(subject)
             OutputBody.write(body)
             i = i + 1
-            sleep(2000)
+            sleep(1000)
         }
     }
 }

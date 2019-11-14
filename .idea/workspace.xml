@@ -10,13 +10,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Checker.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Checker.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmailReciever.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailReciever.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EmailTester.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailTester.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NetworkManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NetworkManager.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Parser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/runAgents.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runAgents.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
