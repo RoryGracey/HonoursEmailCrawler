@@ -13,20 +13,16 @@ class Checker implements CSProcess{
         while(true) {
             channelOutput.write('Ready')
             def job = channelInput.read()
-            println(nodeID + ' did this job: ' + job)
-            channelOutput.write('Bad or Good')
+            def connection =  new URL(job.toString()).openConnection();
+            Scanner scanner = new Scanner(connection.getInputStream());
+            scanner.useDelimiter("\\Z");
+            def content = scanner.next();
+            scanner.close();
+            def result = (content =~ /GOOD|BAD/)[0]
+            //println(result)
+            // println(nodeID + ' did this job: ' + job)
+            channelOutput.write('Node ' + nodeID + ': ' + result)
         }
-        //try {
-            //def domainToCheck = 'google.co.uk'
-            //def domainInetAddress = InetAddress.getByName(domainToCheck);
-            //println("Domain information: ");
-            //println(domainInetAddress);
-            //toLocal.write("Hello This is coming from agent")
-            //result = channelInput.read()
-        //} catch (UnknownHostException uhe) {
-        //    println('No Domain Found')
-        //}
-
     }
 
 }
