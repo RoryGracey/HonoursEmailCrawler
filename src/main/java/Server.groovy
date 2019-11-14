@@ -10,15 +10,15 @@ class Server implements CSProcess{
     ChannelOutput bodyOut
     ChannelOutput toReciever
     void run(){
-        String user = userIn.read()
-        String subject = subjectIn.read()
-        String body = bodyIn.read()
-        //println "$user ..  $subject .. $body"
-        userOut.write(user)
-        subjectOut.write(subject)
-        bodyOut.write(body)
-        def resultFromParser = result.read()
-        toReciever.write(user + ": " + subject + ": "+ body + ": " + resultFromParser)
-        println(resultFromParser)
+        while(true) {
+            String user = userIn.read()
+            String subject = subjectIn.read()
+            String body = bodyIn.read()
+            //println "$user ..  $subject .. $body"
+            userOut.write(user)
+            subjectOut.write(subject)
+            bodyOut.write(body)
+
+        }
     }
 }

@@ -1,3 +1,4 @@
+import groovyJCSP.ALT
 import jcsp.lang.CSProcess
 import jcsp.lang.*
 
@@ -8,14 +9,21 @@ class NetworkManager implements CSProcess{
     ChannelOutput toQuarantine
     ChannelInput fromQuarantine
     void run(){
-        def link = fromParser.read()
-        println(link)
-        toQuarantine.write(link)
-        def qResponse = fromQuarantine.read()
-        if(qResponse == 'OK'){
-            toParser.write(qResponse)
-        }else {
-            toParser.write(qResponse)
+        def jobs = []
+        while(true) {
+            def alt = new ALT([fromParser, fromQuarantine])
+            def index = alt.fairSelect()
+            switch (index){
+                case 0:
+                    jobs << fromParser.read()
+                    toQuarantine.write('jobav')
+                    break
+                case 1:
+                    def response = fromQuarantine.read()
+                    toQuarantine.write(jobs.pop())
+                    break
+            }
+            //def qResponse = fromQuarantine.read()
         }
     }
 }

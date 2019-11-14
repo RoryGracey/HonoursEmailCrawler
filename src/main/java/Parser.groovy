@@ -11,14 +11,13 @@ class Parser implements CSProcess{
     ChannelOutput toNetworkManager
     ChannelInput fromNetworkManager
     void run(){
-        def outputFromAgent = []
-        def receivedUser = userIn.read()
-        def receivedInput = subjectIn.read()
-        def receivedBody = bodyIn.read()
-        def result = (receivedBody =~/[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)/)[0]
-        def parsedLink = result[0]
-        println(parsedLink)
-        toNetworkManager.write(parsedLink)
-        def response = fromNetworkManager.read()
+        while(true) {
+            def receivedUser = userIn.read()
+            def receivedInput = subjectIn.read()
+            def receivedBody = bodyIn.read()
+            def result = (receivedBody =~ /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)/)[0]
+            def parsedLink = result[0]
+            toNetworkManager.write(parsedLink)
+        }
     }
 }

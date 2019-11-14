@@ -9,9 +9,12 @@ class Checker implements CSProcess{
     ChannelInput channelInput
     ChannelOutput toQNM
     def nodeID
-    def result
     void run(){
-        channelOutput.write('Hello from ' + nodeID)
+        while(true) {
+            channelOutput.write('Ready')
+            def job = channelInput.read()
+            println(nodeID + ' did this job: ' + job)
+        }
         //try {
             //def domainToCheck = 'google.co.uk'
             //def domainInetAddress = InetAddress.getByName(domainToCheck);
