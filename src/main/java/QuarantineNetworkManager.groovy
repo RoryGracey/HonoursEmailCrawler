@@ -6,7 +6,6 @@ class QuarantineNetworkManager implements CSProcess {
     ChannelInput fromNetworkManager
     ChannelInputList fromChecker
     ChannelOutputList toChecker
-    ChannelInput checkerReady
     ChannelOutput toNetworkManager
     void run(){
         def avCheckers = []

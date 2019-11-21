@@ -22,6 +22,7 @@ class Checker implements CSProcess{
             //println(result)
             // println(nodeID + ' did this job: ' + job)
             channelOutput.write('Node ' + nodeID + ': ' + result)
+            sleep(1000)
         }
     }
 
