@@ -9,53 +9,30 @@ class QuarantineNetworkManager implements CSProcess {
     ChannelOutput toBuffer
     ChannelOutput jobRequest
     void run(){
+        sleep(1000)
+        println('started')
         def avCheckers = []
-        def alt = new ALT (fromChecker)
-        while(true){
+        println(avCheckers)
+        for(i in 1 .. toChecker.size() - 2){
+            avCheckers << i
+        }
+        while (true){
+            println('top of loop')
             jobRequest.write('RequestJob')
             def response = fromNetworkManager.read()
-            if(response == 'nojob' && avCheckers.size() != 0){
-                break
+            println(response)
+            if (response == 'nojob'){
+                println('here')
+                jobRequest.write('RequestJob')
+            }else{
+                def takingJob = (int)avCheckers.pop()
+                toChecker[takingJob].write(response)
+                def checkerResponse = fromChecker[takingJob].read()
+                avCheckers << takingJob
+                println(avCheckers)
+                println(checkerResponse)
             }
-            switch (alt.fairSelect()) {
-                case 1:
-                    def result = fromChecker[1].read()
-                    if (result == 'Ready') {
-                        avCheckers << 1
-                        break
-                    }else if(result != 'Ready'){
-                        println('Result: ' + result)
-                    }
-                    break
-                case 2:
-                    def result = fromChecker[2].read()
-                    if(result == 'Ready'){
-                        avCheckers << 2
-                        break
-                    }else if(result != 'Ready'){
-                        println('Result: ' + result)
-                    }
-                    break
-                case 3:
-                    def result = fromChecker[3].read()
-                    if (result == 'Ready'){
-                        avCheckers << 3
-                        break
-                    }else if(result != 'Ready'){
-                        println('Result: ' + result)
-                    }
-                    break
-                case 4:
-                    def result = fromChecker[4].read()
-                    if (result == 'Ready'){
-                        avCheckers << 4
-                        break
-                    }else if(result != 'Ready'){
-                        println('Result: ' + result)
-                    }
-                    break
-            }
-        }
 
+        }
     }
 }
