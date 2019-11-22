@@ -6,26 +6,19 @@ class QuarantineNetworkManager implements CSProcess {
     ChannelInput fromNetworkManager
     ChannelInputList fromChecker
     ChannelOutputList toChecker
-    ChannelOutput toNetworkManager
+    ChannelOutput toBuffer
+    ChannelOutput jobRequest
     void run(){
         def avCheckers = []
         def alt = new ALT (fromChecker)
         while(true){
             def index = alt.fairSelect()
+            jobRequest.write('requestJob')
+            println('wroteJobRequest')
             switch (index) {
                 case 0:
                     def fromNM = fromChecker[0].read()
-                    if(fromNM == 'jobav'){
-                        if (avCheckers.size() != 0) {
-                            def takingJob = (int) avCheckers.pop()
-                            toNetworkManager.write(takingJob)
-                            def job = fromNetworkManager.read()
-                            toChecker[takingJob].write(job)
-                        }else{
-
-                        }
-                        break
-                    }
+                    println(fromNM)
                     break
                 case 1:
                     def result = fromChecker[1].read()

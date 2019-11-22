@@ -5,7 +5,6 @@ import jcsp.lang.*
 
 class NetworkManager implements CSProcess{
     ChannelInput fromParser
-    ChannelOutput toParser
     ChannelOutput toQuarantine
     ChannelInput fromQuarantine
     void run(){
@@ -15,23 +14,24 @@ class NetworkManager implements CSProcess{
             println('looping')
             println(jobs)
             println('After select')
-            def index = alt.fairSelect()
+            def index = alt.select()
             println(index)
             switch (index){
                 case 0:
-                    println('Selected one')
                     jobs << fromParser.read()
                     println('read from parser')
-                    toQuarantine.write('jobav')
                     break
                 case 1:
-                    println('Selected two')
-                    def response = fromQuarantine.read()
-                    println('read from Q')
-                    toQuarantine.write(jobs.pop())
-                    break
-                default:
-                    println('default')
+                    def jobR = fromQuarantine.read()
+                    if(jobR == "requestJob"){
+                        println('read from Q')
+                        if(jobs.size() != 0) {
+                            toQuarantine.write(jobs.pop())
+                        }else{
+                            break
+                        }
+                        break
+                    }
                     break
             }
         }
