@@ -11,26 +11,23 @@ class NetworkManager implements CSProcess{
         def jobs = []
         def alt = new ALT([fromParser, fromQuarantine])
         while(true) {
-            println('looping')
-            println(jobs)
-            println('After select')
-            def index = alt.select()
-            println(index)
+            def index = alt.fairSelect()
             switch (index){
                 case 0:
+                    println('i read a job')
                     jobs << fromParser.read()
-                    println('read from parser')
+
                     break
                 case 1:
                     def jobR = fromQuarantine.read()
-                    if(jobR == "requestJob"){
-                        println('read from Q')
+                    if(jobR == "RequestJob"){
                         if(jobs.size() != 0) {
                             toQuarantine.write(jobs.pop())
+                            break
                         }else{
+                            toQuarantine.write('nojob')
                             break
                         }
-                        break
                     }
                     break
             }

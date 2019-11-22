@@ -12,14 +12,12 @@ class QuarantineNetworkManager implements CSProcess {
         def avCheckers = []
         def alt = new ALT (fromChecker)
         while(true){
-            def index = alt.fairSelect()
-            jobRequest.write('requestJob')
-            println('wroteJobRequest')
-            switch (index) {
-                case 0:
-                    def fromNM = fromChecker[0].read()
-                    println(fromNM)
-                    break
+            jobRequest.write('RequestJob')
+            def response = fromNetworkManager.read()
+            if(response == 'nojob' && avCheckers.size() != 0){
+                break
+            }
+            switch (alt.fairSelect()) {
                 case 1:
                     def result = fromChecker[1].read()
                     if (result == 'Ready') {
@@ -58,5 +56,6 @@ class QuarantineNetworkManager implements CSProcess {
                     break
             }
         }
+
     }
 }
