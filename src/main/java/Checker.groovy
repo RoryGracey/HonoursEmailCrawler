@@ -7,7 +7,7 @@ import java.net.InetAddress
 class Checker implements CSProcess{
     ChannelOutput channelOutput
     ChannelInput channelInput
-    ChannelOutput toQNM
+    ChannelOutput toNetworkBuffer
     def nodeID
     void run(){
         while(true) {
@@ -20,8 +20,12 @@ class Checker implements CSProcess{
             def result = (content =~ /GOOD|BAD/)[0]
             //println(result)
             // println(nodeID + ' did this job: ' + job)
-            channelOutput.write('Node ' + nodeID + ': ' + result)
-            sleep(1000)
+            if(result == 'GOOD') {
+                toNetworkBuffer.write('Node ' + nodeID + ': ' + result)
+                sleep(1000)
+            }else if(result == 'BAD'){
+                println('Node ' + nodeID + ' got bad result: ' + result)
+            }
         }
     }
 
