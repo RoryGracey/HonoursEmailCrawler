@@ -6,7 +6,7 @@ class EmailReciever implements CSProcess{
     void run(){
         while(true) {
             def emailRecieved = channelInput.read()
-            println("EMAIL RECEIVED")
+            println("EMAIL RECEIVED: " + emailRecieved)
         }
     }
 }
