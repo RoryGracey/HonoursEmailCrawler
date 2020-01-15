@@ -17,11 +17,9 @@ class NetworkManager implements CSProcess{
                     jobs << fromParser.read()
                     break
                 case 1:
-                    println(jobs)
                     def jobR = fromQuarantine.read()
                     if (jobs.size() != 0)
                         toQuarantine.write(jobs.pop())
-                        println('wrote job')
                     break
             }
         }

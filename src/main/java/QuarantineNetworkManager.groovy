@@ -19,14 +19,10 @@ class QuarantineNetworkManager implements CSProcess {
         while (true){
             jobRequest.write('RequestJob')
             def response = fromNetworkManager.read()
-            println(response)
-            if (response == 'nojob'){
-                jobRequest.write('RequestJob')
-            }else{
+            if (response){
                 def takingJob = (int)avCheckers.pop()
                 toChecker[takingJob].write(response)
                 avCheckers << takingJob
-                println(avCheckers)
             }
 
         }

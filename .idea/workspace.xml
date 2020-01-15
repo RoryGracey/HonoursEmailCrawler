@@ -8,7 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Checker.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Checker.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EmailReciever.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailReciever.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NMBuffer.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NMBuffer.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NetworkManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NetworkManager.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,12 +60,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="370" />
-    <option name="y" value="-8" />
-    <option name="width" value="1040" />
-    <option name="height" value="744" />
   </component>
   <component name="ProjectId" id="1P6cjjNYJHJdYpYn3Xf3XUl7FV8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

@@ -23,6 +23,7 @@ class Checker implements CSProcess{
             if(result == 'GOOD') {
                 toNetworkBuffer.write('Node ' + nodeID + ': ' + result)
                 sleep(1000)
+                println('Node ' + nodeID + ' got bad result: ' + result)
             }else if(result == 'BAD'){
                 println('Node ' + nodeID + ' got bad result: ' + result)
             }

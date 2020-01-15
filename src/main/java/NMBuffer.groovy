@@ -6,7 +6,7 @@ class NMBuffer implements CSProcess{
     void run() {
     while(true){
         def result = fromCheckerProcesses.read()
-        println('Got good from: ' + result)
+        //println('Got good from: ' + result)
         toReceiver.write(result)
     }
     }
