@@ -21,10 +21,10 @@ class QuarantineNetworkManager implements CSProcess {
         for(i in 1 .. toChecker.size() - 2){
             avCheckers << i
         }
-        def nodeAddr = new TCPIPNodeAddress(4000)
+        def nodeAddr = new TCPIPNodeAddress(4002)
         Node.getInstance().init(nodeAddr)
 
-        def toNM = new TCPIPNodeAddress(controllerIP, 3000)
+        def toNM = new TCPIPNodeAddress(controllerIP, 3002)
         def toNMChan = NetChannel.any2net(toNM, 50)
         def fromNM = NetChannel.net2one()
         def fromNMLoc = fromNM.getLocation()

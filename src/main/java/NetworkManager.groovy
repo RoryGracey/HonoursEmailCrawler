@@ -11,7 +11,7 @@ class NetworkManager implements CSProcess{
     void run(){
         def qnmIDs = 1
         def qnmsConnected = 0
-        def nodeAddr = new TCPIPNodeAddress(3000)
+        def nodeAddr = new TCPIPNodeAddress(3002)
         Node.getInstance().init(nodeAddr)
         println "controller ip address = ${nodeAddr.getIpAddress()}"
         def fromQNMs = NetChannel.net2one()
@@ -20,7 +20,6 @@ class NetworkManager implements CSProcess{
         def qnmAmount = 1
         for (p in 0..<1) qnmList.append(null)
         def jobs = []
-        def alt = new ALT([fromParser])
         while(true) {
             if (qnmsConnected == 0) {
                 println "reading"
@@ -32,8 +31,8 @@ class NetworkManager implements CSProcess{
                     println "Joined"
                 }
             }
+            def alt = new ALT([fromParser, fromQNMs])
             def index = alt.select()
-
             switch (index) {
                 case 0:
                     jobs << fromParser.read()
