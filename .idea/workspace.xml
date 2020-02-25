@@ -9,10 +9,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JoinQNM.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NetworkManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NetworkManager.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/txtFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/txtFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Checker.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Checker.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NMBuffer.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NMBuffer.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Groovy.runQNM">
+  <component name="RunManager" selected="Groovy.runAgents">
     <configuration name="EmailClientOneGUI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EmailClientOneGUI" />
       <module name="emailCrawler.emailCrawler.main" />
@@ -184,8 +182,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Groovy.runQNM" />
         <item itemvalue="Groovy.runAgents" />
+        <item itemvalue="Groovy.runQNM" />
         <item itemvalue="Gradle.Project [build]" />
         <item itemvalue="Gradle.HonoursEmailCrawler2 [clean]" />
         <item itemvalue="Groovy.runtest" />
