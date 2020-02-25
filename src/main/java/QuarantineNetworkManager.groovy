@@ -6,7 +6,7 @@ class QuarantineNetworkManager implements CSProcess {
     ChannelInput fromNetworkManager
     ChannelInputList fromChecker
     ChannelOutputList toChecker
-    ChannelOutput toBuffer
+     ChannelOutput toBuffer
     ChannelOutput jobRequest
     void run(){
         sleep(1000)

@@ -1,12 +1,13 @@
 import groovyJCSP.ALT
 import jcsp.lang.CSProcess
 import jcsp.lang.*
-
+import jcsp.net2.*
+import jcsp.net2.tcpip.TCPIPNodeAddress
 
 class NetworkManager implements CSProcess{
     ChannelInput fromParser
     ChannelOutput toQuarantine
-    ChannelInput fromQuarantine
+    def fromQuarantine = NetChannel.net2one()
     void run(){
         def jobs = []
         def alt = new ALT([fromParser, fromQuarantine])
