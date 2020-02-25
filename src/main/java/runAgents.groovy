@@ -15,10 +15,6 @@ def Parser2Network = Channel.one2one()
 def Network2Parser = Channel.one2one()
 def checkerBuffer = Channel.any2one()
 //def QNMToNM = Channel.one2one()
-def receiverNode = new TCPIPNodeAddress(3000)
-jcsp.net2.Node.getInstance().init(receiverNode)
-String hostAddress = receiverNode.getIpAddress()
-println("Host Address: " + hostAddress)
 def buffer2receiver = Channel.one2one()
 
 def checkerNum = 4

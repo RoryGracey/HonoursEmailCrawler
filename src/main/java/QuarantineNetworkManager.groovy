@@ -16,6 +16,7 @@ class QuarantineNetworkManager implements CSProcess {
         for(i in 1 .. toChecker.size() - 2){
             avCheckers << i
         }
+
         while (true){
             jobRequest.write('RequestJob')
             def response = fromNetworkManager.read()
