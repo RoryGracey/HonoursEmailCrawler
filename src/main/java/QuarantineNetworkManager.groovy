@@ -27,6 +27,7 @@ class QuarantineNetworkManager implements CSProcess {
         def toNM = new TCPIPNodeAddress(controllerIP, 3000)
         def toNMChan = NetChannel.any2net(toNM, 50)
         def fromNM = NetChannel.net2one()
+
         def fromNMLoc = fromNM.getLocation()
 
         while (true){
