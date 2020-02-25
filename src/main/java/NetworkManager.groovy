@@ -17,26 +17,33 @@ class NetworkManager implements CSProcess{
         def fromQNMs = NetChannel.net2one()
         def fromQNMLoc = fromQNMs.getLocation()
         def qnmList = new ChannelOutputList()
-        qnmAmount = 1
+        def qnmAmount = 1
         for (p in 0..<1) qnmList.append(null)
-        if(qnmsConnected == 0){
-            fromQNMs.read()
-
-        }
         def jobs = []
         def alt = new ALT([fromParser])
         while(true) {
+            if (qnmsConnected == 0) {
+                println "reading"
+                if( qnmsConnected == 0) {
+                    def qnm = fromQNMs.read()
+                    qnmsConnected += 1
+                    def toQNM = NetChannel.one2net(qnm)
+                    qnmList[0] = toQNM
+                    println "Joined"
+                }
+            }
             def index = alt.select()
-            switch (index){
+
+            switch (index) {
                 case 0:
                     jobs << fromParser.read()
                     break
                 case 1:
-                    def jobR = fromQuarantine.read()
+                    def jobR = fromQNMs.read()
                     if (jobs.size() != 0)
-                        toQuarantine.write(jobs.pop())
+                        qnmList[0].write(jobs.pop())
                     break
+                }
             }
         }
     }
-}
