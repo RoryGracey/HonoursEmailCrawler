@@ -15,18 +15,11 @@ class Checker implements CSProcess{
     int portNumber
     int vcnNum
     def nodeID
+    def toNBChan
     void run(){
-        def controllerIP  = "146.176.165.95"
-        println("started")
+        print("started+")
 
-        def toNb = new TCPIPNodeAddress(controllerIP, 3003)
-        println('i did it')
-        def toNBChan = NetChannel.any2net(toNb, 51)
-        //def fromNM = NetChannel.net2one()
-        //def fromNMLoc = fromNM.getLocation()
-        println "got here"
         while(true) {
-            println("im here")
             def job = channelInput.read()
             println job
             def connection =  new URL(job.toString()).openConnection()

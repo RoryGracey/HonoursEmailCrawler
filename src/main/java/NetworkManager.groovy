@@ -22,7 +22,6 @@ class NetworkManager implements CSProcess{
         def jobs = []
         while(true) {
             if( qnmsConnected == 0) {
-                println "reading"
                 def qnm = fromQNMs.read()
                 qnmsConnected += 1
                 def toQNM = NetChannel.one2net(qnm)
@@ -36,12 +35,9 @@ class NetworkManager implements CSProcess{
                     jobs << fromParser.read()
                     break
                 case 1:
-                    println "here"
                     def jobR = fromQNMs.read()
                     if (jobs.size() != 0)
-                        println "jobs does not equal 0"
                         qnmList[0].write(jobs.pop())
-                        println "I wrote"
                     break
                 }
             }

@@ -9,10 +9,11 @@ class NMBuffer implements CSProcess{
     void run() {
 
 
-        def nodeAddr = new TCPIPNodeAddress(3003)
+        def nodeAddr = new TCPIPNodeAddress(3007)
         Node.getInstance().init(nodeAddr)
         def fromCheckers = NetChannel.net2one()
         while(true){
+            println "in loop"
             def result = fromCheckers.read()
             println('Got good from: ' + result)
             toReceiver.write(result)
