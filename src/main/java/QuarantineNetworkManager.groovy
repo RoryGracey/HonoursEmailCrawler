@@ -15,7 +15,7 @@ class QuarantineNetworkManager implements CSProcess {
     void run(){
         sleep(1000)
         println('started')
-        def controllerIP = '146.176.75.9'
+        def controllerIP = '146.176.77.200'
         def avCheckers = []
         println(avCheckers)
         for(i in 1 .. toChecker.size() - 2){
@@ -29,7 +29,6 @@ class QuarantineNetworkManager implements CSProcess {
         def fromNM = NetChannel.net2one()
         def fromNMLoc = fromNM.getLocation()
 
-        //println(joinQNM.toString())
         toNMChan.write(fromNMLoc)
         println('Wrote')
         while (true){

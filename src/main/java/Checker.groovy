@@ -13,10 +13,10 @@ class Checker implements CSProcess{
     ChannelOutput toNetworkBuffer
     def nodeID
     void run(){
+        def controllerIP = '146.176.77.200'
+        def toNetBuffer = new TCPIPNodeAddress(controllerIP, 3005)
+        def toNBChan = NetChannel.any2net(toNetBuffer, 51)
         while(true) {
-            def controllerIP = '146.176.75.9'
-            def toNM = new TCPIPNodeAddress(controllerIP, 3003)
-            def toNMChan = NetChannel.any2net(toNM, 50)
             def job = channelInput.read()
             def connection =  new URL(job.toString()).openConnection()
             Scanner scanner = new Scanner(connection.getInputStream())
@@ -27,7 +27,7 @@ class Checker implements CSProcess{
             //println(result)
             // println(nodeID + ' did this job: ' + job)
             if(result == 'GOOD') {
-                toNMChan.write('Node ' + nodeID + ': ' + result)
+                toNBChan.write('Node ' + nodeID + ': ' + result)
                 sleep(1000)
                 println('Node ' + nodeID + ' got bad result: ' + result)
             }else if(result == 'BAD'){
