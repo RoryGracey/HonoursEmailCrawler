@@ -7,14 +7,14 @@ class NMBuffer implements CSProcess{
     ChannelInput fromCheckerProcesses
     ChannelOutput toReceiver
     void run() {
-        def nodeAddr = new TCPIPNodeAddress(3005)
+
+
+        def nodeAddr = new TCPIPNodeAddress(3003)
         Node.getInstance().init(nodeAddr)
         def fromCheckers = NetChannel.net2one()
-        println "listening"
-
         while(true){
             def result = fromCheckers.read()
-            //println('Got good from: ' + result)
+            println('Got good from: ' + result)
             toReceiver.write(result)
         }
     }

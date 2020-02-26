@@ -25,7 +25,9 @@ def chan2In = new ChannelInputList(chan2)
 
 
 for(i in 1 .. checkerNum){
-    def checkerProcess = new Checker(channelInput: chan1[i].in(), channelOutput: chan2[i].out(), toNetworkBuffer: checkerBuffer.out(), nodeID: i)
+    def portnum = 4000 + i
+    def vcn = 51 + i
+    def checkerProcess = new Checker(channelInput: chan1[i].in(), channelOutput: chan2[i].out(), toNetworkBuffer: checkerBuffer.out(), nodeID: i, portNumber: portnum, vcnNum: vcn)
     checkerProcesses << checkerProcess
     clientsAvailable << checkerProcess.nodeID
 }

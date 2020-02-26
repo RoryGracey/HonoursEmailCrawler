@@ -26,6 +26,8 @@ class QuarantineNetworkManager implements CSProcess {
 
         def toNM = new TCPIPNodeAddress(controllerIP, 3002)
         def toNMChan = NetChannel.any2net(toNM, 50)
+
+
         def fromNM = NetChannel.net2one()
         def fromNMLoc = fromNM.getLocation()
 
@@ -33,10 +35,13 @@ class QuarantineNetworkManager implements CSProcess {
         println('Wrote')
         while (true){
             toNMChan.write('RequestJob')
+            println "waiting on response"
             def response = fromNM.read()
             if (response){
+                println(avCheckers)
                 def takingJob = (int)avCheckers.pop()
                 toChecker[takingJob].write(response)
+                println "wrote job"
                 avCheckers << takingJob
             }
 
