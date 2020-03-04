@@ -12,7 +12,6 @@ class Checker implements CSProcess{
     ChannelOutput channelOutput
     ChannelInput channelInput
     ChannelOutput toNetworkBuffer
-    int portNumber
     int vcnNum
     def nodeID
     def toNBChan
@@ -29,7 +28,7 @@ class Checker implements CSProcess{
             scanner.close()
             def result = (content =~ /GOOD|BAD/)[0]
             if(result == 'GOOD') {
-                //toNBChan.write('Node ' + nodeID + ' got bad result: ' + result)
+                toNBChan.write('Node ' + nodeID + ' got bad result: ' + result)
                 println('Node ' + nodeID + ' got bad result: ' + result)
             }else if(result == 'BAD'){
                 println('Node ' + nodeID + ' got bad result: ' + result)
