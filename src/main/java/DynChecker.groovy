@@ -11,7 +11,6 @@ import java.net.InetAddress
 class DynChecker implements CSProcess{
     ChannelOutput channelOutput
     ChannelInput channelInput
-    ChannelOutput toNetworkBuffer
     def nodeID
     def toNBChan
     void run(){
@@ -30,5 +29,6 @@ class DynChecker implements CSProcess{
         }else if(result == 'BAD'){
             println('Node ' + nodeID + ' got bad result: ' + result)
         }
+        channelOutput.write("im done")
     }
 }

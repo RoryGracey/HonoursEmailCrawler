@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18b14d3e-ff11-4bdd-9a34-dee3beac0ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DynChecker.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DynQNM.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/runDynQNM.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/runQNM.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runQNM.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Checker.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Checker.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DynChecker.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DynChecker.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DynQNM.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DynQNM.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,10 +57,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Groovy.runQNM">
+  <component name="RunManager" selected="Groovy.runDynQNM">
     <configuration name="runAgents" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="emailCrawler_main" />
       <setting name="path" value="file://$PROJECT_DIR$/src/main/java/runAgents.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/java" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="runDynQNM" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="emailCrawler_main" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/main/java/runDynQNM.groovy" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workDir" value="file://$PROJECT_DIR$/src/main/java" />
@@ -89,12 +106,14 @@
       <item itemvalue="Groovy.runAgents" />
       <item itemvalue="Groovy.runQNM" />
       <item itemvalue="Groovy.runNetBuffer" />
+      <item itemvalue="Groovy.runDynQNM" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Groovy.runQNM" />
+        <item itemvalue="Groovy.runDynQNM" />
         <item itemvalue="Groovy.runNetBuffer" />
         <item itemvalue="Groovy.runAgents" />
+        <item itemvalue="Groovy.runQNM" />
       </list>
     </recent_temporary>
   </component>

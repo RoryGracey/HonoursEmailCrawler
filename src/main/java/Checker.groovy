@@ -1,3 +1,4 @@
+import groovyJCSP.ALT
 import jcsp.lang.CSProcess
 import jcsp.lang.ChannelInput
 import jcsp.lang.ChannelOutput
@@ -13,7 +14,6 @@ class Checker implements CSProcess{
     ChannelInput channelInput
     ChannelOutput toNetworkBuffer
     def nodeID
-    def toNBChan
     void run(){
         print("started+")
 
