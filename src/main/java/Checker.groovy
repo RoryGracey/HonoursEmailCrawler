@@ -20,8 +20,8 @@ class Checker implements CSProcess{
         print("started+")
 
         while(true) {
+            println nodeID + " waiting to read"
             def job = channelInput.read()
-            println job
             def connection =  new URL(job.toString()).openConnection()
             Scanner scanner = new Scanner(connection.getInputStream())
             scanner.useDelimiter("\\Z")
@@ -29,8 +29,7 @@ class Checker implements CSProcess{
             scanner.close()
             def result = (content =~ /GOOD|BAD/)[0]
             if(result == 'GOOD') {
-                toNBChan.write('Node ' + nodeID + ': ' + result)
-                sleep(1000)
+                //toNBChan.write('Node ' + nodeID + ' got bad result: ' + result)
                 println('Node ' + nodeID + ' got bad result: ' + result)
             }else if(result == 'BAD'){
                 println('Node ' + nodeID + ' got bad result: ' + result)

@@ -12,6 +12,9 @@ class EmailTester implements CSProcess{
                 String user = "User One"
                 String subject = "Subject from user One"
                 String body = "body from user one: " + line
+                if(line == "DONE"){
+                    println("file finished")
+                }
                 OutputUser.write(user)
                 OutputSubject.write(subject)
                 OutputBody.write(body)

@@ -20,14 +20,14 @@ class NetworkManager implements CSProcess{
         def qnmAmount = 1
         for (p in 0..<1) qnmList.append(null)
         def jobs = []
+        if( qnmsConnected == 0) {
+            def qnm = fromQNMs.read()
+            qnmsConnected = qnmsConnected + 1
+            def toQNM = NetChannel.one2net(qnm)
+            qnmList[0] = toQNM
+            println "Joined"
+        }
         while(true) {
-            if( qnmsConnected == 0) {
-                def qnm = fromQNMs.read()
-                qnmsConnected += 1
-                def toQNM = NetChannel.one2net(qnm)
-                qnmList[0] = toQNM
-                println "Joined"
-            }
             def alt = new ALT([fromParser, fromQNMs])
             def index = alt.select()
             switch (index) {
@@ -35,10 +35,14 @@ class NetworkManager implements CSProcess{
                     jobs << fromParser.read()
                     break
                 case 1:
+                    println jobs
+                    println "waiting from QNM"
                     def jobR = fromQNMs.read()
+                    println "job request"
+                    sleep(100)
                     if (jobs.size() != 0)
                         qnmList[0].write(jobs.pop())
-                    break
+                        println "Job sent"
                 }
             }
         }

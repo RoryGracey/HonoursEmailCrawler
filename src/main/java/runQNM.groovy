@@ -21,9 +21,10 @@ def chan1In = new ChannelInputList(chan1)
 def chan2 = Channel.one2oneArray(checkerNum + 2)
 def chan2Out = new ChannelOutputList(chan2)
 def chan2In = new ChannelInputList(chan2)
+
 def nodeAddr = new TCPIPNodeAddress(4002)
 jcsp.net2.Node.getInstance().init(nodeAddr)
-def controllerIP = '146.176.165.152'
+def controllerIP = '146.176.75.72'
 
 def toNM = new TCPIPNodeAddress(controllerIP, 3002)
 def toNMChan = NetChannel.any2net(toNM, 50)
@@ -32,19 +33,16 @@ println "Here"
 def fromNM = NetChannel.net2one()
 def fromNMLoc = fromNM.getLocation()
 
-def nbIP  = "146.176.165.152"
-def toNb = new TCPIPNodeAddress(nbIP, 3007)
-def toNbChan = NetChannel.any2net(toNb, 51)
-
-println toNbChan
+def toNetworkBuffer = new TCPIPNodeAddress(controllerIP, 3015)
+def toNetBufferChan = NetChannel.any2net(toNetworkBuffer, 52)
 
 for(i in 1 .. checkerNum){
     print(i)
-    def portnum = 4000 + i
     def vcn = 51 + i
-    def checkerProcess = new Checker(toNBChan:toNbChan, channelInput: chan1[i].in(), channelOutput: chan2[i].out(), toNetworkBuffer: checkerBuffer.out(), nodeID: i, portNumber: portnum, vcnNum: vcn)
+    def checkerProcess = new Checker(toNBChan:toNetBufferChan, channelInput: chan1[i].in(), channelOutput: chan2[i].out(), toNetworkBuffer: checkerBuffer.out(), nodeID: i, vcnNum: 51)
     checkerProcesses << checkerProcess
     clientsAvailable << checkerProcess.nodeID
+    println "started checker ${i}"
 }
 
 

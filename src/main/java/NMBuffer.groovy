@@ -4,17 +4,14 @@ import jcsp.net2.Node
 import jcsp.net2.tcpip.TCPIPNodeAddress
 
 class NMBuffer implements CSProcess{
-    ChannelInput fromCheckerProcesses
     ChannelOutput toReceiver
     void run() {
-
-
-        def nodeAddr = new TCPIPNodeAddress(3007)
-        Node.getInstance().init(nodeAddr)
-        def fromCheckers = NetChannel.net2one()
+        String ip = '146.176.75.72'
+        def fromCheckers = new TCPIPNodeAddress(ip, 3015)
+        Node.getInstance().init(fromCheckers)
+        def fromCheckersChan = NetChannel.numberedNet2One(52)
         while(true){
-            println "in loop"
-            def result = fromCheckers.read()
+            def result = fromCheckersChan.read()
             println('Got good from: ' + result)
             toReceiver.write(result)
         }
