@@ -40,7 +40,7 @@ for(i in 1 .. checkerNum){
 }
 
 
-def QNM = new QuarantineNetworkManager(fromNMC: fromNM, fromNMLocation: fromNMLoc, toNMC: toNMChan, fromNetworkManager: chan2[0].in(), fromChecker: chan2In, toChecker: chan1Out)
+def QNM = new QuarantineNetworkManager(fromNMC: fromNM, fromNMLocation: fromNMLoc, toNMC: toNMChan, fromChecker: chan2In, toChecker: chan1Out)
 
 
 def network = [QNM]

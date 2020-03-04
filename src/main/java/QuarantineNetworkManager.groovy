@@ -7,7 +7,6 @@ import jcsp.net2.tcpip.TCPIPNodeAddress
 import java.util.Random
 
 class QuarantineNetworkManager implements CSProcess {
-    ChannelInput fromNetworkManager
     ChannelInputList fromChecker
     ChannelOutputList toChecker
     def toNMC
