@@ -19,7 +19,6 @@ class EmailTester implements CSProcess{
                 OutputSubject.write(subject)
                 OutputBody.write(body)
                 i = i + 1
-                sleep(100)
             }
         }
     }

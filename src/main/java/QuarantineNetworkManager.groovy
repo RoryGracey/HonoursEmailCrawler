@@ -10,8 +10,6 @@ class QuarantineNetworkManager implements CSProcess {
     ChannelInput fromNetworkManager
     ChannelInputList fromChecker
     ChannelOutputList toChecker
-    ChannelOutput toBuffer
-    ChannelOutput jobRequest
     def toNMC
     def fromNMLocation
     def fromNMC

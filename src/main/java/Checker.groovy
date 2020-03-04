@@ -12,7 +12,6 @@ class Checker implements CSProcess{
     ChannelOutput channelOutput
     ChannelInput channelInput
     ChannelOutput toNetworkBuffer
-    int vcnNum
     def nodeID
     def toNBChan
     void run(){

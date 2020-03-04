@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18b14d3e-ff11-4bdd-9a34-dee3beac0ec3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Checker.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Checker.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailTester.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailTester.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/runQNM.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runQNM.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
