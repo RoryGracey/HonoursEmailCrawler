@@ -9,7 +9,7 @@ class DynQNM implements CSProcess{
     def fromNMC
     ChannelInput fromCheckers
     def checkerNum = 0
-
+    def ChanOutPass
     def chan1 = Channel.one2oneArray(4 )
     def CheckerOut = new ChannelOutputList(chan1)
 
@@ -17,33 +17,24 @@ class DynQNM implements CSProcess{
 
     def toNetworkBuffer = new TCPIPNodeAddress(controllerIP, 3015)
     def toNetBufferChan = NetChannel.any2net(toNetworkBuffer, 52)
-
+    def processQueue = true
+    def running = true
     void run(){
-        while(true) {
+        toNMC.write(fromNMLocation)
+        while(running) {
             // create alt between checkers and NM so we can see when a checker process terminates
-            toNMC.write(fromNMLocation)
-            def alt = new ALT([fromNMC, fromCheckers])
-            println "going to alt"
-            toNMC.write('RequestJob')
-            def index = alt.select()
-            switch (index){
-                case 0:
-                    def job = fromNMC.read()
-                    println "job"
-                    if (job && checkerNum < 5) {
-                        checkerNum = checkerNum + 1
-                        def newChecker = new DynChecker(toNBChan: toNetBufferChan, channelInput: chan1[checkerNum].in(),
-                                channelOutput: chan1[checkerNum].out(), nodeID: checkerNum)
-
-                        CheckerOut[checkerNum].write(job)
-                        println "wrote job"
-                        break
-                    }
-                    break
-                case 1:
-                    def cResponse = fromCheckers.read()
-                    checkerNum = checkerNum - 1
-                    break
+            toNMC.write("Request Job")
+            def job = fromNMC.read()
+            println checkerNum
+            if (job && checkerNum < 4) {
+                processQueue = true
+                def newChecker = new DynChecker(toNBChan: toNetBufferChan, channelInput: chan1[checkerNum].in(),
+                        channelOutput: ChanOutPass.out(), nodeID: checkerNum)
+                def processManager = new ProcessManager(newChecker)
+                processManager.start()
+                CheckerOut[checkerNum].write(job)
+                checkerNum = checkerNum + 1
+                
             }
         }
     }

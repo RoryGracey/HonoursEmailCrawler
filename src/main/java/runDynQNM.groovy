@@ -16,7 +16,7 @@ def fromNM = NetChannel.net2one()
 def fromNMLoc = fromNM.getLocation()
 
 
-def QNM = new DynQNM(fromNMC: fromNM, fromNMLocation: fromNMLoc, toNMC: toNMChan, fromCheckers: checker2qnm.in())
+def QNM = new DynQNM(fromNMC: fromNM, fromNMLocation: fromNMLoc, toNMC: toNMChan, fromCheckers: checker2qnm.in(), ChanOutPass: checker2qnm)
 
 
 def network = [QNM]

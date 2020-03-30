@@ -29,6 +29,5 @@ class DynChecker implements CSProcess{
         }else if(result == 'BAD'){
             println('Node ' + nodeID + ' got bad result: ' + result)
         }
-        channelOutput.write("im done")
     }
 }
