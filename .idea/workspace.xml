@@ -2,17 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18b14d3e-ff11-4bdd-9a34-dee3beac0ec3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/NetBufferNonNet.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NetworkManagerNonNet.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/QNMNonNet.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/runNonNet.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DynChecker.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DynChecker.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DynQNM.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DynQNM.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/runDynQNM.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runDynQNM.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Checker.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Checker.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cons.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Consumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailTester.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailTester.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuarantineNetworkManager.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/runAgents.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runAgents.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/runScript.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/txtFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/txtFile.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Groovy.runDynQNM">
+  <component name="RunManager" selected="Groovy.runNonNet">
     <configuration name="runAgents" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="emailCrawler_main" />
       <setting name="path" value="file://$PROJECT_DIR$/src/main/java/runAgents.groovy" />
@@ -98,6 +107,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="runNonNet" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="emailCrawler_main" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/main/java/runNonNet.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/java" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="runQNM" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="emailCrawler_main" />
       <setting name="path" value="file://$PROJECT_DIR$/src/main/java/runQNM.groovy" />
@@ -114,9 +134,11 @@
       <item itemvalue="Groovy.runQNM" />
       <item itemvalue="Groovy.runNetBuffer" />
       <item itemvalue="Groovy.runDynQNM" />
+      <item itemvalue="Groovy.runNonNet" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Groovy.runNonNet" />
         <item itemvalue="Groovy.runDynQNM" />
         <item itemvalue="Groovy.runNetBuffer" />
         <item itemvalue="Groovy.runAgents" />
