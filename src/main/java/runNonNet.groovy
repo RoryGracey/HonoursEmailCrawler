@@ -22,7 +22,8 @@ def chan1Out = new ChannelOutputList(chan1)
 def NM2QNM = Channel.one2one()
 
 for(i in 1 .. checkerNum){
-    def checkerProcess = new Checker(channelInput: chan1[i].in(), toNetworkBuffer: checker2Buffer.out(), nodeID: i, AvCheckers: avCheckers)
+    def checkerProcess = new Checker(channelInput: chan1[i].in(), toNetworkBuffer: checker2Buffer.out(),
+            nodeID: i, AvCheckers: avCheckers)
     checkerProcesses << checkerProcess
     clientsAvailable << checkerProcess.nodeID
 }
@@ -31,7 +32,7 @@ for(i in 1 .. checkerNum){
 def emailClient = new EmailTester(OutputUser: outputUser.out(), OutputSubject: outputSubject.out(), OutputBody: outputBody.out())
 def parser = new Parser(userIn: outputUser.in(), subjectIn: outputSubject.in(), bodyIn: outputBody.in(), toNetworkManager: Parser2Network.out())
 def NM = new NetworkManagerNonNet(fromParser: Parser2Network.in(), toQuarantine: NM2QNM.out(), fromQuarantine: QNetwork2Network.in())
-def QNM = new QNMNonNet(fromNetworkManager: NM2QNM.in(), jobRequest: QNetwork2Network.out(), toChecker: chan1Out, AvCheckers: avCheckers)
+def QNM = new QNMNonNet(fromNetworkManager: NM2QNM.in(), jobRequest: QNetwork2Network.out(), toChecker: chan1Out)
 def NB = new NetBufferNonNet(fromCheckerProcesses: checker2Buffer.in(), toReceiver: NB2Receiver.out())
 def emailReceiver = new EmailReciever(channelInput: NB2Receiver.in())
 
